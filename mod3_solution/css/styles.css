@@ -1,140 +1,126 @@
-*{
-      box-sizing:border-box;
-      
-    
-
-    }
-
-
-#header-nav{
-  background-color: grey;
-  border-radius: 0px;
-  border: 0;
-
+body{
+    font-size: 16px;
+    color: #fff;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+/* HEADER */
+#header-nav{
+    background-color: orange;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand{
+    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-left: 15px;
+}
+
+.navbar-brand h1{ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #F7DDD4;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .55;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+
+
+#nav-list{
+    margin-top: 10px;
+}
+
+#nav-list a{
+    color: #F7DDD4;
+    text-align: center;
+    
+}
+
+#nav-list a:hover{
+    background: #448D76;
+    text-shadow: 1px 1px 1px #222;
+    font-weight: bolder;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #448D76;
+}
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top: -40px;
+}
+
+#main-content h1{
+    padding-bottom: 30px;
+    color: #f79f80;
+}
+
+.row p{
+    background-color: grey;
+    color: #F7DDD4;
+    border-radius: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin: 0 15px 70px 15px;
+}
+
+.row p span{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-shadow: 1px 1px 1px #093426;
+    font-weight: bold;
+}
+
+.row p a{
+    display: block;
+    color: #093426;
+}
+
+/* Medium Devices Only */
+@media(min-width: 992px) and (max-width: 1199px){
   
 }
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -90px;
+
+/* Small Devices Only */
+@media(min-width: 768px) and (max-width: 991px){
+   
 }
 
-
-
-
-
-    h1 {
-    text-align: left;
-    text-shadow: 1px 1px 1px #222;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
-    color: pink;
+/* Extra Small Devices Only */
+@media(max-width: 767px){
+    #collapsable-nav a{
+        font-size: 1.2em;
     }
-
-
-
-    h2 {
-      font-size:30px;
-      margin-top: -40px;
-      position: relative;
-      background-color: white;
-      text-align: center;
-      color: orange;
-      font-style: italic;
-      font-weight: bold;
-
- }
-
-    div{
-      background-color: grey;
-      position:relative;
-      border:0 ;
-      margin-left:1.5%;
-      margin-right:1.5%;
-      margin-bottom:1.5%;
-      margin-top: 20px;
-      padding: 20px;
+    .row p{
+        margin: 0 50px 70px 50px;
     }
-    #p1{
-      position:absolute;
-      left:120px;
-      right:0;
-      margin-top: -50px;
-      border:0px solid black;      
-      padding:0px;
-      margin-bottom:30px;
-      
-      color:#4B0082;
-      font-size:15px;
-      font-size:20px;
-      font-style:italic;
-      float:right;
-      width:20%;
-    }
-    #p2{
-      position:absolute;
-      margin-top: -60px;
-      
-      left:120px;
-      margin-bottom:40px;
-      
-      color:#4B0082;
-      padding:10px;
-      border:0px solid black;
-      font-style:italic;
-      font-size:20px;
-      float:right;
-      width:20%;
-    }
-    #p3{
-      position:absolute;
-      margin-top:-60px;
-      border:0px solid black;
-      font-style:italic;
-      font-size:20px;
-      color:#4B0082;
-      padding: 10px;
-      left:120px;
-      width:20%;
-    }
+}
 
-
-
-    
-    .row{
-      width:100%;
-      position:absolute;
-      background-color: white;
+/* Super Extra Small Devices Only */
+@media(max-width: 479px){
+    .col-xxs-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
     }
-    @media(min-width:992px){
-      .col-md-4{
-        float:left;
-        width:30%;
-      }
+    .row p{
+        margin: 0 50px 70px 50px;
     }
-    @media(min-width:768px)and (max-width:991px){
-      .col-sm-6{
-        float:left;
-        border:1px solid black;
-        width:47%;
-      }
-      .col-sm-12{
-        float:left;
-        border:1px solid black;
-        width:97%;
-      }
-      
-
-
-    }
-    @media(max-width:767px){
-      .col-xs-12{
-        float:left;
-        border:1px solid black;
-        width:97%;
-      }
-    }
+}
